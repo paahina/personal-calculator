@@ -7,7 +7,7 @@ function handleInput(value) {
   if (value === 'AC') {
     document.querySelector('.input-js').value = '';
   } else if (value === '=') {
-    document.querySelector('.input-js').value = eval(document.querySelector('.input-js').value);
+    //document.querySelector('.input-js').value = eval(document.querySelector('.input-js').value);
   } else {
     addInput(value);
   }
