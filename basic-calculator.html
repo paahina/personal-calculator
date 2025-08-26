@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/basic-calculator.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +14,36 @@
     <div class = "calculator">
         <div class="header-calculator">
             <p class = "basic-calculator">Basic Calculator</p>
-            <img src="icons\history_icon.png" class = "history-icon">
+            <img src="icons\history-icon.png" class = "history-icon">
         </div>
-        <input class="input" type="text" value = "123" readonly>
+        <input class="input input-js" type="text" readonly>
         <div class="container-buttons">
-            <button class="btn">AC</button>
-            <button class="btn">±</button>
-            <button class="btn">%</button>
-            <button class="btn">÷</button>
+            <button class="btn btn-AC-js">AC</button>
+            <button class="btn btn-plusminus-js">±</button>
+            <button class="btn btn-percent-js">%</button>
+            <button class="btn btn-divide-js">÷</button>
 
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">×</button>
+            <button class="btn btn-7-js">7</button>
+            <button class="btn btn-8-js">8</button>
+            <button class="btn btn-9-js">9</button>
+            <button class="btn btn-multiply-js">×</button>
 
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">-</button>
+            <button class="btn btn-4-js">4</button>
+            <button class="btn btn-5-js">5</button>
+            <button class="btn btn-6-js">6</button>
+            <button class="btn btn-minus-js">-</button>
 
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">+</button>
+            <button class="btn btn-1-js">1</button>
+            <button class="btn btn-2-js">2</button>
+            <button class="btn btn-3-js">3</button>
+            <button class="btn btn-plus-js">+</button>
 
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn">=</button>
+            <button class="btn btn-0-js">0</button>
+            <button class="btn btn-dot-js">.</button>
+            <button class="btn btn-equals-js">=</button>
         </div>
     </div>
+    <script src="script/buttons-lisenters.js"></script>
+    <script src = "script/basic-calculator.js"></script>
 </body>
 </html>
