@@ -1,0 +1,70 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+input, p, button, img{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 186, 204);
+    padding: 20px;
+    width: 35%;
+    height: 80%;
+    gap: 10px;
+    border-radius: 10px;
+}
+.header-calculator{
+    display: flex;
+    justify-content: space-between;/* horizontal alignment (right side) */
+    align-items: center;
+}
+.basic-calculator{
+    font-size: large;
+}
+.history-icon{
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.input{
+    width: 100%;
+    text-align: right;
+    font-size: 4vh;
+    height: 15%;
+    box-sizing: border-box; /*includes the padding of the parent div*/
+    border-radius: 10px;
+    border: 3px solid rgb(195, 239, 249);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.container-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    box-sizing: border-box;
+    flex: 1;
+}
+.btn{
+    font-size: 3vh;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(217, 247, 254);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.btn:hover{
+    background-color: rgb(195, 239, 249);
+    box-shadow: 0 0 5px rgba(234, 234, 234, 0.4);
+}
+.btn:active{
+    background-color: rgb(188, 243, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
